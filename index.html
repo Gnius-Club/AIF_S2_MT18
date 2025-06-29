@@ -1,24 +1,287 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Misión 18 : Desarrollo Ágil - Prototipo Mínimo Viable (MVP)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Misión 18 : Desarrollo Ágil - Prototipo Mínimo Viable (MVP)</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-0">📝</a></li>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+
+            <div class="sidebar-info">
+                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
+                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+
+            <div class="activity-card" id="activity-0">
+                <h2><span class="book-icon">📝</span> De un Vistazo: Misión Gnius</h2>
+                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
+                <div class="overview-table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Objetivos:</strong>
+                                    <ul>
+                                        <li>Comprender y aplicar el concepto de Desarrollo Ágil y Prototipo Mínimo Viable (MVP).</li>
+                                        <li>Identificar la mecánica "corazón" de su proyecto a partir de su GDD.</li>
+                                        <li>Definir la arquitectura de software de alto nivel para su MVP.</li>
+                                    </ul>
+                                    <strong>Secuencia de Clase:</strong>
+                                    <ul>
+                                        <li><strong class="tactic-highlight">⚡Saludo Interactivo con IA:</strong> Introducción al concepto de empezar por el "corazón" del proyecto.</li>
+                                        <li><strong class="tactic-highlight">⚡"I Can Statement" + Presentación del Desafío:</strong> Presentación del MVP como una decisión de arquitectura.</li>
+                                        <li><strong class="tactic-highlight">⚡AI GYM:</strong> Adquisición conceptual sobre cómo definir un MVP y su arquitectura verbal.</li>
+                                        <li><strong class="tactic-highlight">⚡Brain Spark:</strong> Aplicación práctica del análisis del GDD, diálogo de arquitectura con IA y actualización del GDD.</li>
+                                        <li><strong class="tactic-highlight">⚡Gnius STORM:</strong> Retroalimentación estructurada entre pares sobre la justificación de su MVP.</li>
+                                    </ul>
+                                    <strong>Entregable Clave:</strong>
+                                    <ul>
+                                        <li>Una nueva sección en su GDD titulada "MVP", que describe la mecánica central del proyecto y su arquitectura de software de alto nivel, validada con Xolo.</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <strong>Materiales Específicos:</strong>
+                                    <ul>
+                                        <li>Proyector o pantalla interactiva.</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso al Chat "Agente Gnius" (Xolo) para cada equipo.</li>
+                                        <li>Los GDDs detallados de la Misión 17.5.</li>
+                                        <li>Acceso a un editor de texto o herramienta de presentaciones.</li>
+                                        <li>Presentación de diapositivas (Diapositivas 1-11).</li>
+                                    </ul>
+                                    <strong>Preparación Previa para ESTA Sesión:</strong>
+                                    <ol>
+                                        <li><strong>Revisión de Misión (Interna):</strong>
+                                            <ul>
+                                                <li>Asegurar que Xolo está preparado para actuar como 'Arquitecto de Software', guiando a los estudiantes a definir su MVP y su arquitectura verbal.</li>
+                                            </ul>
+                                        </li>
+                                        <li><strong>Familiarización:</strong> Internalizar la pregunta clave del MVP ("¿Qué interacción, si la elimino, mi juego deja de tener sentido?") para guiar a los equipos. Prepararse para una sesión centrada en la estrategia de desarrollo y la priorización.</li>
+                                    </ol>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo de I.A. y Contexto de Misión ⏰ 3 minutos</h2>
+                <p>Establecer un ambiente de trabajo profesional y enmarcar la sesión como una introducción al desarrollo ágil.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Bienvenida y Contexto ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta la misión: construir en capas, empezando por el corazón.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Directores. Tienen un plan maestro, el GDD. Pero un gran proyecto no se construye de una vez. Se construye en capas, como una cebolla. Hoy, aprenderán el secreto del desarrollo ágil: empezar por el corazón. Su misión es identificar la única mecánica sin la cual su juego no existiría. Bienvenidos al Prototipo Mínimo Viable."</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Activación de IA y Perfil ⏰ 2 minutos</h3>
+                            <p>El facilitador da la instrucción explícita a los alumnos para que saluden a Xolo en el chat.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Activen su sesión de trabajo para la Misión 18. Ya conocen el protocolo estándar para iniciar el diálogo con Xolo."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
+                <p>Clarificar las metas de aprendizaje y presentar el MVP como una decisión de arquitectura, no de programación.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: El Desafío del Día ⏰ 4 minutos</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador introduce el concepto de Prototipo Mínimo Viable (MVP) y la metodología ágil.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"No vamos a construir todo el GDD. Sería lento y arriesgado. En la industria se trabaja con metodologías ágiles. Esto significa construir la versión más pequeña y simple posible del producto que aún así funcione y demuestre la idea central. A esto se le llama Prototipo Mínimo Viable o MVP. Hoy, su única tarea es definir qué es el MVP de su proyecto. Es una decisión de arquitectura, no de programación."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Objetivo de Aprendizaje (I Can Statement) ⏰ 3 minutos</h3>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje concreto de la sesión.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Al finalizar esta sesión, podrán afirmar con total propiedad: <strong>'Yo puedo analizar mi GDD, identificar la mecánica central y definir la arquitectura de mi Prototipo Mínimo Viable (MVP).'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: A.I. GYM ⏰ 10 minutos</h2>
+                <p>Guiar a los estudiantes para que aprendan a identificar el MVP y a describir su arquitectura a un alto nivel.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Diálogo Conceptual con Xolo ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador instruye a los estudiantes sobre cómo iniciar su diálogo con su 'Arquitecto de Software'.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Entramos al A.I. GYM. Para definir su MVP, necesitan pensar como arquitectos de software. Consulten a Xolo para que los guíe. Díganle: <strong>'Xolo, como nuestro Arquitecto de Software, explícanos cómo identificar la 'columna vertebral' de nuestro proyecto y cómo describir verbalmente su arquitectura.'</strong> Él les dará la pregunta crítica que deben hacerse y les mostrará cómo planificar la estructura antes que el detalle."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark ⏰ 15 minutos</h2>
+                <p>Supervisar el workflow de analizar el GDD, definir la arquitectura del MVP con Xolo y documentarlo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Análisis del GDD ⏰ 5 minutos</h3>
+                            <p>(Proyectar Diapositiva 6) Los equipos revisan su GDD y debaten internamente para identificar su mecánica "corazón".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Ahora, al Brain Spark. Abran sus GDDs. Como equipo, analícenlos y respondan la pregunta crítica: ¿cuál es la única interacción que, si la eliminan, su juego deja de tener sentido? Debatan hasta llegar a un consenso sobre su mecánica 'corazón'."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Diálogo de Arquitectura y Actualización del GDD ⏰ 10 minutos</h3>
+                            <p>(Proyectar Diapositiva 7 y 8) Los equipos validan su arquitectura con Xolo y actualizan su GDD con la sección "MVP".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">"Sean implacables. Si una característica es solo 'bonita' pero no esencial, no es parte del MVP. Ahora, describan verbalmente la arquitectura de su mecánica 'corazón' a Xolo para que la valide. Una vez que Xolo confirme que su plano es sólido, añadan una nueva sección a su GDD titulada 'MVP'. En ella, describan la mecánica y la arquitectura que acaban de definir. Este es su entregable."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Moderar una fase de retroalimentación estructurada sobre la elección y justificación de la mecánica central (MVP) de cada equipo.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 9) El facilitador guía una breve reflexión sobre la decisión de priorización.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Tiempo. Reflexión individual. Piensen en la discusión que tuvieron. ¿Cuál fue la característica más difícil de descartar para definir su MVP? ¿Por qué la mecánica que eligieron es la verdadera 'columna vertebral' de su proyecto?"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Pair (Intercambio en Parejas) ⏰ 2 minutos</h3>
+                            <p>(Proyectar Diapositiva 10) En parejas, los estudiantes explican y justifican la elección de su MVP.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"En parejas. Presenten verbalmente su MVP. No expliquen la idea completa, solo la mecánica 'corazón'. Justifiquen por qué eligieron esa como la columna vertebral. El compañero escucha y se prepara para evaluar la solidez del argumento."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: Share (Retroalimentación Estructurada) ⏰ 1 minuto</h3>
+                            <p>(Proyectar Diapositiva 11) El facilitador provee una estructura para que el feedback se centre en la priorización.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Para el feedback, usen esta estructura: <strong>1. 'Tu elección de MVP es sólida porque realmente captura...' 2. 'Una pregunta que tengo sobre las características que descartaron es...' 3. 'Entender tu MVP me ayuda a ver la verdadera esencia de tu juego, que es...'</strong>"</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Síntesis y Cierre ⏰ 1 minuto</h3>
+                            <p>El facilitador concluye la sesión, consolidando la importancia del pensamiento arquitectónico.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">"Hoy han aprendido a pensar como arquitectos de software. Han aprendido a simplificar, a priorizar y a construir sobre una base sólida. Este enfoque ágil les permitirá construir más rápido, con menos riesgos y obtener feedback antes. La próxima semana, comienza el taller de prototipado. Traigan sus planos."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
